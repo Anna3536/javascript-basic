@@ -6,41 +6,20 @@ function Calculadora(operador, valor1, valor2) {
 
     switch (operador) {
         case "+":
-            resultado = suma();
+            resultado = valor1 + valor2;
             break;
         case "-":
-            resultado = resta();
+            resultado = valor1 - valor2;
             break;
         case "*":
-            resultado = multiplicacio();
+            resultado = valor1 * valor2;
             break;
         default:
             resultado = "Algo no està bien introducido";
     }
 
-    document.getElementById("demo").innerHTML = "El resultado es:" + " " + resultado
+    document.getElementById("demo").innerHTML = "El resultado es:" + " " + resultado;
 
-    function suma() {
-        let resultado2;
-        resultado2 = valor1 + valor2;
-        return resultado2;
-
-    }
-
-
-    function resta() {
-        let resultado2;
-        resultado2 = valor1 - valor2;
-        return resultado2;
-
-    }
-
-    function multiplicacio() {
-        let resultado2;
-        resultado2 = valor1 * valor2;
-        return resultado2;
-
-    }
 
 
 
